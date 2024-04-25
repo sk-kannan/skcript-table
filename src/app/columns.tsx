@@ -81,7 +81,7 @@ export const columns: ColumnDef<Payment>[] = [
         <Badge
           variant={"secondary"}
           className={cn(
-            "text-center gap-1 font-medium",
+            "text-center gap-1 font-medium rounded-md",
             isAboveTotalCost
               ? "text-red-500 bg-red-100"
               : "text-green-500 bg-green-100"
@@ -92,5 +92,21 @@ export const columns: ColumnDef<Payment>[] = [
         </Badge>
       );
     },
+  },
+  {
+    accessorKey: "plus",
+    header: ({ column }) => (
+      <div className="flex items-center justify-center gap-1">
+        <h1>+</h1>
+      </div>
+    ),
+  },
+  {
+    accessorKey: "more",
+    header: ({ column }) => (
+      <div className="flex items-center justify-center gap-1">
+        <h1>...</h1>
+      </div>
+    ),
   },
 ];

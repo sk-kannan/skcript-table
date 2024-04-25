@@ -19,7 +19,7 @@ import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 
 export default function Header() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       <div className="flex items-center justify-between gap-2 h-[42px] border-b-[1px]">
         <div className="flex items-center gap-2 px-2">
           <SidebarSimple />
@@ -40,7 +40,7 @@ export default function Header() {
           <Button size={"sm"} className="text-sm h-7">
             Export data
           </Button>
-          <div className="rounded-full bg-gray-200 p-1">
+          <div className="rounded-full bg-gray-100 p-1">
             <Question />
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Header() {
           </Button>
         </div>
         <Tabs defaultValue="1" className="px-2">
-          <TabsList className="bg-gray-200 h-8">
+          <TabsList className="h-8">
             <TabsTrigger value="1">
               <Layout />
             </TabsTrigger>
